@@ -1301,6 +1301,15 @@ class Insert(ValuesBase):
         @overload
         def returning(
             self,
+            __ent0: None,
+            /,
+            *,
+            sort_by_parameter_order: bool = False,
+        ) -> ReturningInsert[None]: ...
+
+        @overload
+        def returning(
+            self,
             __ent0: _TCCA[_T0],
             /,
             *,
